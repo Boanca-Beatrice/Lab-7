@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+
+<head>
+    <style>
+        body {
+            background-color: lavender;
+        }
+        
+        p {
+            background-color: LavenderBlush;
+            color: orange;
+            font-size: 150%;
+            position: relative;
+        }
+        
+        Img {
+            border-radius: 8px;
+            position: relative;
+        }
+        
+        table,
+        td,
+        th {
+            border: 0.5px solid green;
+            background-color: tomato;
+        }
+        
+        table {
+            width: 80%;
+            border-collapse: collapse;
+        }
+        
+        ul,
+        li {
+            border: 0.5px solid green;
+            background-color: tomato;
+        }
+        
+        ul {
+            width: 30%;
+            border-collapse: collapse;
+        }
+    </style>
+    <script>
+        function inViitor() {
+            document.getElementById("numeProfil").innerHTML = "Inginer Beatrice Boanca";
+            document.getElementbyId("pozaProfil").src="poza.jpg";
+
+            document.body.background-color="blue";
+
+            var tabel = document.getElementById("tabel");
+
+            tabel.rows[0].cells[0].innerHTML=" Circuite Pasive";
+            tabel.rows[0].cells[1].innerHTML=" Anul 1";
+            tabel.rows[1].cells[0].innerHTML=" Sport";
+            tabel.rows[1].cells[1].innerHTML=" Anul 1";
+            tabel.rows[2].cells[0].innerHTML=" Informatica Aplicata";
+            tabel.rows[2].cells[1].innerHTML=" Anul 1";
+            
+            document.getElementById('poza').src = "poza.jpg";
+            document.body.style.backgroundColor = "blue";
+        }
+    </script>
+    <title>This is me</title>
+</head>
+
+<body>
+    <p> Nume: Boanca<br> Prenume: Beatrice<br> e-mail: beatriceboanca@yahoo.com</p>
+    <img id="pozaProfil" src="me.jpeg" alt="Beatrice" width="200">
+    <br>
+    <button type="button" onclick="inViitor()">ALta viata
+    </button>
+
+    <p id="numeProfil">Boanca Beatrice</p>
+    <p>  Educatia este o metoda prin care cineva capata un nivel mai ridicat de prejudecati </p>
+
+    <table id="tabel">
+        <tr>Materii pe care doresc sa le aprofundez</tr>
+        <th>Materia</th>
+        <th>Link</th>
+        <th>Anul de predare</th>
+        </tr>
+        <tr>
+            <td>Programare</td>
+            <td> <a href="https://etti.utcluj.ro/files/FiseDisciplina/EaRo/04.pdf">fisa disciplinei</a></td>
+            <td>Anul 1</td>
+        </tr>
+        <tr>
+            <td>Informatica Aplicata</td>
+            <td><a href="https://etti.utcluj.ro/files/FiseDisciplina/EaRo/06.pdf">fisa disciplinei</a></td>
+            <td>Anul 1</td>
+        </tr>
+        <tr>
+            <td>Componente si circuite electronice pasive</td>
+            <td><a href="https://etti.utcluj.ro/files/FiseDisciplina/EaRo/05.pdf">fisa disciplinei</a></td>
+            <td>Anul 1</td>
+        </tr>
+    </table>
+    <h4 style="background-color:">Hobby-urile mele</h4>
+    <ul>
+        <li>Volei</li>
+        <li>Escaladare</li>
+        <li>Plimbarile lungi</li>
+    </ul>
+</body>
